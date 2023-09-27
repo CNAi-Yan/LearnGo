@@ -4,16 +4,14 @@ package main
 // 依赖
 import (
 	"fmt"
-	"unsafe"
 )
 
 func main() {
 	/* 这是我的第一个简单的程序 */ //注释
 	age := 28
-	fmt.Printf("int_t的默认类型是:%T\n", age)
-	fmt.Println(unsafe.Sizeof(age))
+	age++
+	fmt.Printf("age++ 的值是:%d\n",age)
 }
-
 /*
 当标识符（包括常量、变量、类型、函数名、结构字段等等）以一个大写字母开头，如：Println，
 那么使用这种形式的标识符的对象就可以被外部包的代码所使用（客户端程序需要先导入这个包），
