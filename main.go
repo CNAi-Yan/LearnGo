@@ -10,7 +10,8 @@ func main() {
 	/* 这是我的第一个简单的程序 */ //注释
 	age := 28
 	age++
-	fmt.Printf("age++ 的值是:%d\n",age)
+	fmt.Println("age++ 的值是:",age, "\n")
+	fmt.Println("age++ 的值是否等于29:",age == 29, "\n")
 }
 /*
 当标识符（包括常量、变量、类型、函数名、结构字段等等）以一个大写字母开头，如：Println，
