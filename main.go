@@ -2,16 +2,16 @@
 package main
 
 // 依赖
-import "fmt"
+import (
+	"fmt"
+	"unsafe"
+)
 
 func main() {
 	/* 这是我的第一个简单的程序 */ //注释
-	var age int
-	fmt.Println("Hello," + " " ,age , " my World!")
-	age = 18
-	fmt.Println("Hello," + " " ,age ," qinghua!")
-	num := "King"
-	fmt.Println("Hello," + " " ,num ," qinghua!")
+	age := 28
+	fmt.Printf("int_t的默认类型是:%T\n", age)
+	fmt.Println(unsafe.Sizeof(age))
 }
 
 /*
